@@ -1,0 +1,119 @@
+.wholeBodyStyle {
+  background: url("./photo_repository/IMG_WaterLily-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; /*contain */
+  background-position: center;
+  width: 95%;
+  height: 95%;
+}
+
+.banner {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: x-large;
+  color: rgb(19, 19, 92);
+  background-color: rgb(175, 211, 201);
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  border-style: ridge;
+  border-color: rgb(175, 211, 201);
+}
+
+.bannerLink {
+  font-size: large;
+  color: rgb(19, 19, 92);
+  float: inline-end;
+  margin: 5px 5px 5px 5px;
+}
+
+.mainLayoutStyle {
+  width: 85vw;
+  padding: 1vw;
+  margin: auto;
+}
+
+.mainBlockContainer {
+  display: block;
+  position: relative;
+  width: 85vw;
+  height: 85vh;
+}
+
+.myQuote {
+  width: 40%;
+  padding: 10px;
+  margin: auto;
+  border: 2px inset rgb(175, 211, 201);
+  border-radius: 10px;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: rgb(19, 19, 92);
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+.myPic {
+  width: 250px;
+  height: 190px;
+  max-width: auto;
+  max-height: auto;
+  border: 2px inset rgb(175, 211, 201);
+  border-radius: 5px;
+  position: absolute;
+  top: 25%;
+  right: 30%;
+  z-index: 1;
+}
+
+.myIntro {
+  width: 40%;
+  padding: 10px;
+  margin: auto;
+  border: 2px inset rgb(175, 211, 201);
+  border-radius: 5px;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: rgb(19, 19, 92);
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  z-index: 2;
+}
+
+.myPic2 {
+  top: 25%;
+  right: 30%;
+  z-index: 1;
+}
+
+.myAbout1 {
+  top: 1%;
+  left: 1%;
+  z-index: 2;
+}
+.myAbout2 {
+  bottom: 1%;
+  right: 1%;
+  z-index: 2;
+}
+
+.myPortfolio {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  border: 2px inset rgb(175, 211, 201);
+  border-radius: 5px;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: rgb(19, 19, 92);
+}

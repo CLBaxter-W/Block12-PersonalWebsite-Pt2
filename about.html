@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website About</title>
+    <!-- link in the external style sheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- define the script to create the string to display -->
+    <script src="./javascript.js"></script>
+  </head>
+  <body class="wholeBodyStyle">
+    <div>
+      <!-- Banner across all three pages  -- Can this be a class that is written once and lives on all the pages?-->
+      <div class="banner">
+        <span>Catherine L. Baxter</span>
+        <a
+          href="./index.html"
+          class="bannerLink"
+          onclick="iWantToPrintThePageName('homePage')"
+          >Home</a
+        >
+        <a
+          href="./about.html"
+          class="bannerLink"
+          onclick="iWantToPrintThePageName('aboutPage')"
+          >About</a
+        >
+        <a
+          href="./portfolio.html"
+          class="bannerLink"
+          onclick="iWantToPrintThePageName('portfolioPage')"
+          >Portfolio</a
+        >
+      </div>
+
+    <!-- Body Container Holds all the lovely items for display -->
+    <main class="mainLayoutStyle">
+      <div class="mainBlockContainer">
+         <div>
+          <img
+            src="./photo_repository/IMG_MaxGryphon-2.jpg"
+            alt="Personal Photo"
+            class="myPic myAbout1"
+          />
+          <div class="myIntro myAbout2"> <p>I enjoy cycling, taekwondo, gardening, photography, hiking and playing with the dogs. </p></div>
+        
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
