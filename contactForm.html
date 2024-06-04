@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+    <!-- Define the stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- define the java scripts for the js functionality -->
+    <script src="./javascript.js"></script>
+    <!-- provides functionality to auto return to calling window
+         using in the "emailSuccess.html form"
+         <script src="./success.js"></script>
+    -->
+  </head>
+
+  <body class="wholeBodyStyle">
+    <!-- Banner across all three pages  -- Can this be a class that is written once and lives on all the pages?-->
+    <div class="banner">
+      <span>Catherine L. Baxter</span>
+
+      <a
+        href="./contactForm.html"
+        class="bannerLink"
+        onclick="iWantToPrintThePageName('contactFormPage')"
+        >Contact Form</a
+      >
+      <a
+        href="./portfolio.html"
+        class="bannerLink"
+        onclick="iWantToPrintThePageName('portfolioPage')"
+        >Portfolio</a
+      >
+      <a
+        href="./about.html"
+        class="bannerLink"
+        onclick="iWantToPrintThePageName('aboutPage')"
+        >About</a
+      >
+      <a
+        href="./index.html"
+        class="bannerLink"
+        onclick="iWantToPrintThePageName('homePage')"
+        >Home</a
+      >
+    </div>
+
+    <main class="mainLayoutStyle">
+      <div class="mainBlockContainer">
+        <div>
+          <img
+            src="./photo_repository/IMG_AspenSky-2.jpg"
+            alt="Personal Photo"
+            class="myPic myAbout1"
+          />
+          <div class="myIntro myAbout2">
+            <form action="./emailSuccess.html">
+              <label for="fullName">Your Name:</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                size="40"
+              /><br />
+
+              <label for="emailValue">Your Email:</label>
+              <input
+                type="email"
+                id="emailValue"
+                name="emailValue"
+                size="40"
+              /><br />
+
+              <label for="messageToMe">Message:</label>
+              <textarea
+                id="messageToMe"
+                name="messageToMe"
+                rows="5"
+                cols="45"
+                placeholder="It is a lovely day"
+              >
+              </textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

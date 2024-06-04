@@ -117,3 +117,32 @@
   font-size: xx-large;
   color: rgb(19, 19, 92);
 }
+
+.gridPersonalMain {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5%;
+  background-color: blueviolet;
+}
+
+.gridPersonalDiv > div {
+  background-color: green;
+  text-align: center;
+  padding: 1% 1% 1% 1%;
+  font-size: xx-large;
+}
+
+.upperLeftItem {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.centeredItem {
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+
+.lowerRightItem {
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
