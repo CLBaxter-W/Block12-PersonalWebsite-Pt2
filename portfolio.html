@@ -10,8 +10,8 @@
     <!-- define the script to create the string to display -->
     <script src="./javascript.js"></script>
   </head>
-  <body>
-    <div class="wholeBodyStyle">
+  <body class="wholeBodyStyle">
+    <div>
       <!-- Banner across all three pages  -- Can this be a class that is written once and lives on all the pages?-->
       <div class="banner">
         <span>Catherine L. Baxter</span>
@@ -40,24 +40,24 @@
           >Home</a
         >
       </div>
-
-      <!-- Body Container Holds all the lovely items for display -->
-      <main class="mainLayoutStyle">
-        <div>
-          <div class="myPortfolio">
-            <p>
-              UI and Communication to DB: Scheduling software to maintain
-              customer data and dispatch repair/install teams.
-            </p>
-          </div>
-          <div class="myPortfolio">
-            <p>
-              UI communication to backend in C++: 3D modeler for manufacturing
-              application
-            </p>
-          </div>
-        </div>
-      </main>
     </div>
+
+    <!-- Body Container Holds all the lovely items for display -->
+    <main>
+      <div class="gridPersonalMain">
+        <div class="gridMyPortfolio gridMyPortfolioPos1">
+          <p>
+            UI and Communication to DB: Scheduling software to maintain customer
+            data and dispatch repair/install teams.
+          </p>
+        </div>
+        <div class="gridMyPortfolio gridMyPortfolioPos2">
+          <p>
+            UI communication to backend in C++: 3D modeler for manufacturing
+            application
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
