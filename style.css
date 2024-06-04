@@ -11,13 +11,13 @@
 .banner {
   font-family: fantasy;
   font-weight: bold;
-  font-size: x-large;
+  font-size: xx-large;
   color: rgb(19, 19, 92);
   background-color: rgb(175, 211, 201);
-  padding: 20px;
+  padding: 2vw;
   width: 95%;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 1vw;
   border-style: ridge;
   border-color: rgb(175, 211, 201);
 }
@@ -26,123 +26,258 @@
   font-size: large;
   color: rgb(19, 19, 92);
   float: inline-end;
-  margin: 5px 5px 5px 5px;
-}
-
-.mainLayoutStyle {
-  width: 85vw;
-  padding: 1vw;
-  margin: auto;
-}
-
-.mainBlockContainer {
-  display: block;
-  position: relative;
-  width: 85vw;
-  height: 85vh;
-}
-
-.myQuote {
-  width: 40%;
-  padding: 10px;
-  margin: auto;
-  border: 2px inset rgb(175, 211, 201);
-  border-radius: 10px;
-  background-color: rgb(175, 211, 201);
-  font-family: fantasy;
-  font-weight: bolder;
-  font-size: xx-large;
-  color: rgb(19, 19, 92);
-  position: absolute;
-  top: 1%;
-  left: 1%;
-}
-
-.myPic {
-  width: 250px;
-  height: 190px;
-  max-width: auto;
-  max-height: auto;
-  border: 2px inset rgb(175, 211, 201);
-  border-radius: 5px;
-  position: absolute;
-  top: 25%;
-  right: 30%;
-  z-index: 1;
-}
-
-.myIntro {
-  width: 40%;
-  padding: 10px;
-  margin: auto;
-  border: 2px inset rgb(175, 211, 201);
-  border-radius: 5px;
-  background-color: rgb(175, 211, 201);
-  font-family: fantasy;
-  font-weight: bolder;
-  font-size: xx-large;
-  color: rgb(19, 19, 92);
-  position: absolute;
-  bottom: 1%;
-  right: 1%;
-  z-index: 2;
-}
-
-.myPic2 {
-  top: 25%;
-  right: 30%;
-  z-index: 1;
-}
-
-.myAbout1 {
-  top: 1%;
-  left: 1%;
-  z-index: 2;
-}
-.myAbout2 {
-  bottom: 1%;
-  right: 1%;
-  z-index: 2;
-}
-
-.myPortfolio {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 10px 10px 10px;
-  border: 2px inset rgb(175, 211, 201);
-  border-radius: 5px;
-  background-color: rgb(175, 211, 201);
-  font-family: fantasy;
-  font-weight: bolder;
-  font-size: xx-large;
-  color: rgb(19, 19, 92);
+  margin: 1vw 1vw 1vw 1vw;
 }
 
 .gridPersonalMain {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 5%;
-  background-color: blueviolet;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(30%, auto);
+  gap: 1%;
+  padding: 1%;
+
+  width: 90vw;
+  height: 80vh;
 }
 
-.gridPersonalDiv > div {
-  background-color: green;
+.gridMyQuote {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  margin: auto;
   text-align: center;
-  padding: 1% 1% 1% 1%;
-  font-size: xx-large;
-}
+  border: 0.5vw inset rgb(175, 211, 201);
+  border-radius: 2vw;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: x-large;
+  color: rgb(19, 19, 92);
 
-.upperLeftItem {
   grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gridMyPic {
+  max-width: auto;
+  max-height: auto;
+
+  grid-column-start: 2;
   grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  z-index: 1;
 }
 
-.centeredItem {
-  grid-column-start: 6;
-  grid-column-end: 8;
+.myPic {
+  width: auto;
+  height: 25vh;
+  border: 0.5vw inset rgb(175, 211, 201);
+  border-radius: 2vw;
 }
 
-.lowerRightItem {
-  grid-column-start: 7;
-  grid-column-end: 9;
+.gridMyIntro {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  margin: auto;
+  text-align: center;
+  border: 0.5vw inset rgb(175, 211, 201);
+  border-radius: 2vw;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: x-large;
+  color: rgb(19, 19, 92);
+
+  z-index: 2;
+
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gridMyPicAbout {
+  max-width: auto;
+  max-height: auto;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  z-index: 1;
+}
+
+.gridMyAbout {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  margin: auto;
+  text-align: center;
+  border: 0.5vw inset rgb(175, 211, 201);
+  border-radius: 2vw;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: x-large;
+  color: rgb(19, 19, 92);
+
+  z-index: 2;
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.gridMyPortfolio {
+  width: auto;
+  height: auto;
+  padding: 2%;
+  margin: 2% 2% 2% 2%;
+
+  border: 1% inset rgb(175, 211, 201);
+  border-radius: 3%;
+  background-color: rgb(175, 211, 201);
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: rgb(19, 19, 92);
+}
+
+.gridMyPortfolioPos1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gridMyPortfolioPos2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+img:hover,
+a:hover {
+  border: 0.5vw ridge rgb(5, 13, 98);
+  border-radius: 1vw;
+  padding: 0.5vw;
+}
+
+/* Add in the media query tests to shrink screen correctly */
+@media only screen and (max-width: 480px) {
+  .banner {
+    font-size: small;
+  }
+
+  .bannerLink {
+    font-size: x-small;
+  }
+
+  .gridMyQuote {
+    font-size: small;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gridMyIntro {
+    font-size: small;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gridMyAbout {
+    font-size: small;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .gridMyPortfolio {
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .banner {
+    font-size: medium;
+  }
+
+  .bannerLink {
+    font-size: small;
+  }
+  .gridMyQuote {
+    font-size: medium;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gridMyIntro {
+    font-size: medium;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gridMyAbout {
+    font-size: medium;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gridMyPortfolio {
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .banner {
+    font-size: xx-large;
+  }
+
+  .bannerLink {
+    font-size: large;
+  }
+
+  .gridMyQuote {
+    font-size: x-large;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gridMyIntro {
+    font-size: x-large;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gridMyAbout {
+    font-size: x-large;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .gridMyPortfolio {
+    font-size: x-large;
+  }
 }
