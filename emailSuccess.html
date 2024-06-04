@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website Home</title>
-    <!-- link in the external style sheet -->
+    <title>Email Success</title>
+
     <link rel="stylesheet" href="./style.css" />
 
     <!-- define the script to create the string to display -->
     <script src="./javascript.js"></script>
+    <!-- provides functionality to auto return to calling window -->
+    <script src="./success.js"></script>
   </head>
+
   <body class="wholeBodyStyle">
     <!-- Banner across all three pages  -- Can this be a class that is written once and lives on all the pages?-->
     <div class="banner">
@@ -40,25 +43,25 @@
       >
     </div>
 
-    <!-- Body Container Holds all the lovely items for display -->
     <main class="mainLayoutStyle">
       <div class="mainBlockContainer">
-        <div class="myQuote">Change your thoughts - Change your world.</div>
-
         <div>
           <img
-            src="./photo_repository/IMG_Cathy20XX-2.jpg"
+            src="./photo_repository/IMG_GermanyRiver.jpeg"
             alt="Personal Photo"
-            class="myPic"
+            class="myPic myAbout1"
           />
-        </div>
-        <div class="myIntro">
-          Interested in observing work flow and improving process to create
-          comfortable work environments.
+          <div class="myIntro myAbout2">
+            <p>Your message has been sent. Thank you for reaching out!</p>
+            <a
+              href="./index.html"
+              class="bannerLink"
+              onclick="iWantToPrintThePageName('homePage')"
+              >Return to Home</a
+            >
+          </div>
         </div>
       </div>
     </main>
-
-    <!-- add footer banner here -->
   </body>
 </html>
